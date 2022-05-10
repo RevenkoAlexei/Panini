@@ -18,7 +18,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @RequestMapping(path = "/games-public-library")
 public class GameController {
 
-    @GetMapping(path = "/all")
+    @GetMapping(path = "/all", produces = APPLICATION_JSON_VALUE)
     @ResponseStatus(value = HttpStatus.OK)
     public List<Game> getAllAvailableGames() throws SQLException, ClassNotFoundException {
         return DataBaseQuerries.getAllGames();

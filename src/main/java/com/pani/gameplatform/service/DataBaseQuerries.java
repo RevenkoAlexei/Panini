@@ -38,7 +38,7 @@ public class DataBaseQuerries {
 
             Connection conn = mysqlDataSource().getConnection();
             Statement stmt = conn.createStatement();
-            String query = "SELECT * FROM GAME WHERE ID_GAME=4";
+            String query = "SELECT * FROM GAME WHERE ID_GAME=" + id;
             ResultSet rs = stmt.executeQuery(query);
             System.out.println(rs.toString());
             while (rs.next()) {
