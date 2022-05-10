@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+<div class="main_div">
+    <form id="all_games" method="get" action="http://127.0.0.1:8080/games-public-library/all">
+        <input class="sbm" type="submit" value="Get All Games !">
+    </form>
+
+    <form id="game_by_id" method="get" action="http://127.0.0.1:8080/games-public-library/game">
+        <div>
+            <label for="game_id2">Game Id</label>
+            <input type="text" id="game_id2" name="game_id">
+        </div>
+        <input class="sbm" type="submit" value="Get Game By Id" >
+    </form>
+
+    <form id="create_game" method="post" action="http://127.0.0.1:8080/games-public-library/add">
+        <div>
+            <label for="game_id3">Game Id</label>
+            <input type="text" id="game_id3" name="game_id">
+        </div>
+        <div>
+            <label for="game_name">Game Name</label>
+            <input type="text" id="game_name" name="game_name">
+        </div>
+        <div>
+            <label for="game_description">Game Description</label>
+            <input type="text" id="game_description" name="game_description">
+        </div>
+
+        <div>
+            <label for="game_creator">Game Creator</label>
+            <input type="text" id="game_creator" name="game_creator">
+        </div>
+
+        <div>
+            <label for="game_release">Game Release Date</label>
+            <input type="date" id="game_release" name="game_release">
+        </div>
+        <input class="sbm" type="submit" value="Add New Game in public Library">
+    </form>
+</div>
+</body>
+</html>

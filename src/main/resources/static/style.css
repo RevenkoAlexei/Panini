@@ -1,0 +1,84 @@
+
+.main_div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+input {
+    font-family: Consolas, serif;
+}
+
+label{
+    text-align: center;
+    background: rgb(0,0,0);
+    color: rgb(54, 255, 0);
+    font-family: Consolas, serif;
+
+}
+
+#game_by_id, #create_game, #all_games{
+    border-style: solid;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+
+div > form {
+    margin : 10px
+}
+
+.sbm {
+
+    background: #e7e7e7;
+    border: none;
+    padding: 1.5rem 3rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    display: inline-block;
+}
+
+ body{
+    background: linear-gradient(-125deg, #75319b, #9900df, #6700df, #2c00df, #007bdf, #0596f9, #05c1f9, #c500ff);
+    background-size: 1600% 1600%;
+
+    -webkit-animation: game_gradient 10s ease infinite;
+    -moz-animation: game_gradient 10s ease infinite;
+    animation: game_gradient 10s ease infinite;
+}
+
+@-webkit-keyframes game_gradient {
+    0%{background-position:0% 25%}
+    25%{background-position:50% 25%}
+    50%{background-position:100% 50%}
+    75%{background-position:50% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes game_gradient {
+    0%{background-position:0% 25%}
+    25%{background-position:50% 25%}
+    50%{background-position:100% 50%}
+    75%{background-position:50% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes game_gradient {
+    0%{background-position:0% 25%}
+    25%{background-position:50% 25%}
+    50%{background-position:100% 50%}
+    75%{background-position:50% 50%}
+    100%{background-position:0% 50%}
+}
+
+    
